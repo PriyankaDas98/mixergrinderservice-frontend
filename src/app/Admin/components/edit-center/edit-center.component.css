@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lato&family=Lora&family=Montserrat:wght@400;800&family=Mukta:wght@400;800&family=Padauk&display=swap");
+
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Balsamiq Sans", cursive;*/
+/* font-family: "Lato", sans-serif; */
+/* font-family: "Lora", serif; */
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Mukta", sans-serif; */
+/* font-family: "Padauk", sans-serif; */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 800px) {
+  .main-form h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+  }
+  /* @media only screen and (max-width: 800px) {
+    .main-form h3 {
+      font-size: 20px;
+      color: red;
+      margin-top: 20px;
+      margin-bottom: 40px; */
+  /* font-weight: 400; */
+  /* font-family: "Lato", sans-serif;
+      line-height: 50px; */
+  /* }
+  } */
+}
+.container-fluid {
+  background-color: #f5f5f5;
+}
+.mat-hint {
+  color: red;
+}
+#file {
+  color: black;
+}
+.center-form {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 20px 12px 20px #e6deeb, -13px -13px 20px #ebe5ec;
+}
+.mat-form-field {
+  width: 100%;
+}
+.main-form {
+  width: 80%;
+  height: 100%;
+  margin: 10px;
+  padding: 30px;
+}
+.main-form h3 {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 50px;
+}
+
+.addButton {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: #9c51e0;
+  font-size: 20px;
+}
+.upload {
+  border: 1px solid #9c51e0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+p {
+  margin-top: 30px;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 1.125;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+}

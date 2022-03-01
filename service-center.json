@@ -1,0 +1,86 @@
+{
+  "addServiceCenter": [
+    {
+      "serviceCenterName": "ABC Services",
+      "serviceCenterPhone": "1234556732",
+      "serviceCenterAddress": "West Bengal",
+      "serviceCenterImageUrl": "C:\\fakepath\\13.jpg",
+      "serviceCentermailId": "pd@gmail.com",
+      "serviceCenterDescription": "A service center",
+      "id": 1
+    },
+    {
+      "serviceCenterName": "XYZ Services",
+      "serviceCenterPhone": "0834566778",
+      "serviceCenterAddress": "null",
+      "serviceCenterImageUrl": "C:\\fakepath\\14.jpg",
+      "serviceCentermailId": "abc@gmail.com",
+      "serviceCenterDescription": "aass",
+      "id": 2
+    },
+    {
+      "serviceCenterName": "XYZ Services",
+      "serviceCenterPhone": "08348649743",
+      "serviceCenterAddress": "null",
+      "serviceCenterImageUrl": "C:\\fakepath\\16.jpg",
+      "serviceCentermailId": "priyanka.55555das@gmail.com",
+      "serviceCenterDescription": "aaa",
+      "id": 3
+    },
+    {
+      "serviceCenterName": "XYZ Services",
+      "serviceCenterPhone": "08348649743",
+      "serviceCenterAddress": "null",
+      "serviceCenterImageUrl": "C:\\fakepath\\2.jpg",
+      "serviceCentermailId": "priyanka.55555das@gmail.com",
+      "serviceCenterDescription": "aa",
+      "id": 4
+    },
+    {
+      "serviceCenterName": "Titan Service Center",
+      "serviceCenterPhone": "8900765511",
+      "serviceCenterAddress": "Punjab",
+      "serviceCenterImageUrl": "C:\\fakepath\\22.jpg",
+      "serviceCentermailId": "titan@gmail.com",
+      "serviceCenterDescription": "A Punjab based service center.",
+      "id": 5
+    },
+    {
+      "serviceCenterName": "ABC Services",
+      "serviceCenterPhone": "2378899886",
+      "serviceCenterAddress": "null",
+      "serviceCenterImageUrl": "C:\\fakepath\\14.jpg",
+      "serviceCentermailId": "priyanka.55555das@gmail.com",
+      "serviceCenterDescription": "aaa",
+      "id": 6
+    },
+    {
+      "serviceCenterName": "ZXC Services",
+      "serviceCenterPhone": "8965332123",
+      "serviceCenterAddress": "Chennai",
+      "serviceCenterImageUrl": "C:\\fakepath\\2.jpg",
+      "serviceCentermailId": "ss@gmail.com",
+      "serviceCenterDescription": "Best service center.",
+      "id": 7
+    },
+    {
+      "serviceCenterName": "XYZ Services",
+      "serviceCenterPhone": "0834864223",
+      "serviceCenterAddress": "null",
+      "serviceCenterImageUrl": "C:\\fakepath\\2.jpg",
+      "serviceCentermailId": "priyanka.55555das@gmail.com",
+      "serviceCenterDescription": "aaaaa",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

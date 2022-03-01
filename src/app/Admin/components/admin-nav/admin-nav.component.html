@@ -1,0 +1,122 @@
+<!-- <nav>
+  <a
+    href=""
+    routerLink="/displayUser"
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>miscellaneous_services</mat-icon>
+  </a>
+  <span> Display Users</span>
+  <span class="example-spacer"></span>
+  <a
+    href=""
+    routerLink="/addCenter"
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>miscellaneous_services</mat-icon>
+  </a>
+  <span>Add center</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+
+<div class="nav-wrapper">
+    <a href="#" class="brand-logo">Spinning Blades</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li>
+        <a
+          href="sass.html"
+          routerLink="/displayuser"
+          routerLinkActive="active"
+          >Display Users</a
+        >
+      </li>
+      <li>
+        <a
+          href="badges.html"
+          routerLink="/addcenter"
+          routerLinkActive="active"
+          >Add center</a
+        >
+      </li>
+      <li><a href="collapsible.html">Center profile</a></li>
+    </ul>
+  </div>
+</nav>  -->
+<div class="nav-div sticky-top">
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">Spinning Blades</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon">
+        <i class="fas fa-bars" style="color: #fff; font-size: 28px"></i
+      ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a
+          routerLink="/displayuser"
+          routerLinkActive="active"
+          class="nav-item nav-link mr-2"
+          >Display Users
+        </a>
+        <a
+          routerLink="/addcenter"
+          routerLinkActive="active"
+          class="nav-item nav-link mr-2"
+          id="adminAddCenter"
+          >Add Center</a
+        >
+        <a
+          routerLink="/centerprofile"
+          routerLinkActive="active"
+          class="nav-item nav-link mr-2"
+          id="adminCenterProfile"
+          >Center Profile</a
+        >
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- <mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened"
+    >Sidenav
+    <a
+      routerLink="/displayuser"
+      routerLinkActive="active"
+      class="nav-item nav-link mr-2"
+      >Display Users
+    </a>
+    <a
+      routerLink="/addcenter"
+      routerLinkActive="active"
+      class="nav-item nav-link mr-2"
+      id="adminAddCenter"
+      >Add Center</a
+    >
+    <a
+      routerLink="/centerProfile"
+      routerLinkActive="active"
+      class="nav-item nav-link mr-2"
+      id="adminCenterProfile"
+      >Center Profile</a
+    >
+  </mat-sidenav> -->
+<!--<mat-sidenav-content>
+    <!-- <button (click)="opened = !opened">Opened toggle</button> -->
+<!-- <button mat-icon-button class="menu-button" (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+<!-- <button (click)="sidenav.toggle()">Toggle</button> -->
+<!-- </mat-sidenav-content>-->
+<!-- </mat-sidenav-container> -->

@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "Priyanka Das",
+      "email": "pd@gmail.com",
+      "phoneNumber": "9390876222"
+    },
+    {
+      "id": 2,
+      "email": "ad@gmail.com",
+      "userName": "Rave Williams",
+      "phoneNumber": "9770876222"
+    },
+    {
+      "id": 3,
+      "email": "ss@gmail.com",
+      "userName": "Jake Smith",
+      "phoneNumber": "7870876262"
+    },
+    {
+      "id": 4,
+      "email": "dr@gmail.com",
+      "userName": "Sneha Sen",
+      "phoneNumber": "6878886262"
+    },
+    {
+      "id": 5,
+      "email": "yu@gmail.com",
+      "userName": "Bob Smith",
+      "phoneNumber": "8862621234"
+    },
+    {
+      "id": 6,
+      "email": "pp@gmail.com",
+      "userName": "Taniya Roy",
+      "phoneNumber": "7772621234"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

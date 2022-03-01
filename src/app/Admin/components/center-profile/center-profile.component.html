@@ -1,0 +1,47 @@
+<app-admin-nav></app-admin-nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="card-deck col-lg-4" *ngFor="let e of centerData">
+      <div class="card" id="adminProfileView">
+        <img
+          src="{{ e.serviceCenterImageUrl }}"
+          class="card-img-top"
+          alt="Service center"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ e.serviceCenterName }}</h5>
+          <p class="card-text">
+            <strong>Address </strong> {{ e.serviceCenterAddress }}
+            <br />
+            <strong>Email </strong> {{ e.serviceCenterMailId }}
+            <br />
+            <strong>Phone Number </strong> {{ e.serviceCenterPhone }}
+            <br />
+            {{ e.serviceCenterDescription }}
+            <br />
+
+            <br />
+          </p>
+
+          <button
+            id="editCenter"
+            mat-fab
+            color="primary"
+            style="margin-right: 15px"
+            (click)="editDialog(e)"
+          >
+            <mat-icon> border_color</mat-icon>
+          </button>
+          <button
+            id="deleteCenter"
+            mat-fab
+            color="accent"
+            (click)="deleteDialog(e.serviceCenterID)"
+          >
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

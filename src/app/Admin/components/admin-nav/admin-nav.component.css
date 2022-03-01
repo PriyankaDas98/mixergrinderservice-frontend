@@ -1,0 +1,31 @@
+/* .admin-nav {
+  background-color: rgb(231, 166, 166);
+}
+.example-spacer {
+  flex: 1 1 auto;
+} */
+
+.nav-div {
+  background-color: #6e72fc;
+  background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);
+}
+.navbar-nav {
+  float: right;
+}
+.navbar a {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.navbar a:hover {
+  color: rgb(245, 245, 228);
+  text-decoration: none;
+  background-color: #464bdd;
+  border-radius: 20px;
+}
+.navbar a.active {
+  color: rgb(247, 247, 235);
+  text-decoration: none;
+  background-color: #464bdd;
+  border-radius: 20px;
+}

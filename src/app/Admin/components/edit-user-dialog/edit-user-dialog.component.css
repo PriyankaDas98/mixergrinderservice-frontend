@@ -1,0 +1,9 @@
+.mat-form-field {
+  width: 100%;
+}
+.mat-raised-button {
+  float: right;
+}
+.mat-hint {
+  color: red;
+}

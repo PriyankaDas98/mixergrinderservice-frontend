@@ -1,0 +1,139 @@
+<app-admin-nav></app-admin-nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-8 center-form">
+      <form
+        class="main-form"
+        [formGroup]="serviceCenterForm"
+        enctype="multipart/form-data"
+        (ngSubmit)="addCenter()"
+      >
+        <h3>Add service center</h3>
+        <div
+          *ngIf="dataAdded"
+          class="alert alert-success alert-dismissible fade show"
+          role="alert"
+        >
+          <b>Success!</b> Service Center has been successfully Added.
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <mat-hint aria-hidden="true">&times;</mat-hint>
+          </button>
+        </div>
+
+        <!-- service center name -->
+        <mat-form-field class="form-field" appearance="standard" #basicForm>
+          <mat-label>Service center name</mat-label>
+          <input id="addName" formControlName="serviceCenterName" matInput />
+          <mat-hint
+            *ngIf="
+              serviceCenterName &&
+              serviceCenterName.invalid &&
+              serviceCenterName.touched
+            "
+            >Please enter a valid name</mat-hint
+          >
+        </mat-form-field>
+
+        <!-- service center phone -->
+        <mat-form-field class="form-field" appearance="standard">
+          <mat-label>Phone number</mat-label>
+          <input id="addNumber" formControlName="serviceCenterPhone" matInput />
+          <mat-hint
+            *ngIf="
+              serviceCenterPhone &&
+              serviceCenterPhone.invalid &&
+              serviceCenterPhone.touched
+            "
+            >Please enter a valid phone number</mat-hint
+          >
+        </mat-form-field>
+
+        <!-- service center mail id -->
+        <mat-form-field class="form-field" appearance="standard">
+          <mat-label>email</mat-label>
+          <input id="addEmail" formControlName="serviceCenterMailId" matInput />
+
+          <mat-hint
+            *ngIf="
+              serviceCenterMailId &&
+              serviceCenterMailId.invalid &&
+              serviceCenterMailId.touched
+            "
+            >Please enter a valid mail</mat-hint
+          >
+        </mat-form-field>
+
+        <!-- Service center address -->
+        <mat-form-field class="form-field" appearance="standard">
+          <mat-label>Address</mat-label>
+          <input
+            id="addAddress"
+            formControlName="serviceCenterAddress"
+            matInput
+          />
+
+          <mat-hint
+            *ngIf="
+              serviceCenterAddress &&
+              serviceCenterAddress.invalid &&
+              serviceCenterAddress.touched
+            "
+            >Please enter a valid address</mat-hint
+          >
+        </mat-form-field>
+        <!-- image url -->
+        <div class="row" style="margin-bottom: 0px">
+          <div class="input-field col s12" style="margin-bottom: 0px">
+            <p>Upload an image</p>
+            <input
+              class="upload"
+              type="file"
+              #file
+              (change)="onFileSelected($event, file.files)"
+              name="serviceCenterImageUrl"
+            />
+
+            <img [src]="image" height="200" *ngIf="image" />
+            <mat-hint *ngIf="invalidImg">Image size is too large!</mat-hint>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <mat-form-field class="form-field" appearance="standard">
+          <mat-label>Description </mat-label>
+          <textarea
+            id="addCenterDesription"
+            formControlName="serviceCenterDescription"
+            matInput
+          ></textarea>
+
+          <mat-hint
+            *ngIf="
+              serviceCenterDescription &&
+              serviceCenterDescription.invalid &&
+              serviceCenterDescription.touched
+            "
+            >Please enter a valid mail</mat-hint
+          >
+        </mat-form-field>
+
+        <button
+          class="addButton"
+          id="addButton"
+          [disabled]="serviceCenterForm.invalid || invalidImg"
+          mat-raised-button
+          color="primary"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <div class="col-lg-1"></div>
+  </div>
+</div>

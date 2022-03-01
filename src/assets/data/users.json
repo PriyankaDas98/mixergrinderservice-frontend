@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "email": "pd@gmail.com",
+      "userName": "Priyanka Das",
+      "phoneNumber": "1234"
+    },
+    {
+      "email": "ad@gmail.com",
+      "userName": "Rave Williams",
+      "phoneNumber": "1234"
+    },
+    {
+      "email": "ss@gmail.com",
+      "userName": "Jake Smith",
+      "phoneNumber": "1234"
+    },
+    { "email": "dr@gmail.com", "userName": "Sneha Sen", "phoneNumber": "1234" },
+    { "email": "yu@gmail.com", "userName": "Bob Smith", "phoneNumber": "1234" },
+    { "email": "pp@gmail.com", "userName": "Taniya Roy", "phoneNumber": "1234" }
+  ]
+}

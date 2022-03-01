@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lato&family=Lora&family=Montserrat:wght@400;800&family=Mukta:wght@400;800&family=Padauk&display=swap");
+.mat-dialog-title {
+  font-family: "Mukta", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+.mat-dialog-content {
+  color: rgb(78, 71, 71);
+}
