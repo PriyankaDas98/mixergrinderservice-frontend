@@ -33,9 +33,9 @@ export class AddCenterService {
       'http://localhost:8081/admin/deleteServiceCenter/' + serviceCenterID
     );
   }
-  updateCenter(data: any, id: any) {
+  updateCenter(data: any) {
     return this.http.put<ServiceCenter[]>(
-      'http://localhost:8081/admin/editServiceCenter/' + id,
+      'http://localhost:8081/admin/editServiceCenter/',
       data
     );
   }

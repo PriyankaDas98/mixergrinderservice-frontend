@@ -22,6 +22,7 @@ export class EditCenterComponent implements OnInit {
   imagePath!: any;
   fileUrl!: any;
   selectedFile!: File;
+  imageSelect = true;
   invalidImg!: any;
   editCenterForm: any;
   constructor(
@@ -33,7 +34,7 @@ export class EditCenterComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.image = this.editData.serviceCenterImageUrl;
+    // this.image = this.editData.serviceCenterImageUrl;
     this.editCenterForm = this._formBuilder.group({
       id: [''],
       serviceCenterName: ['', [Validators.required, Validators.minLength(4)]],
@@ -46,7 +47,7 @@ export class EditCenterComponent implements OnInit {
         ],
       ],
       serviceCenterAddress: ['', Validators.required],
-      serviceCenterImageUrl: [''],
+      serviceCenterImageUrl: ['', Validators.required],
       serviceCenterMailId: ['', [Validators.required, Validators.email]],
       serviceCenterDescription: [
         '',
@@ -125,31 +126,31 @@ export class EditCenterComponent implements OnInit {
         this.editCenterForm.get('serviceCenterImageUrl')?.value
       );
       console.log(formData);
-      this._api
-        .updateCenter(formData, this.editData.serviceCenterID)
-        .subscribe({
-          next: (res: any) => {
-            this.dataAdded = true;
-            this.image = '';
-            console.log(this.editCenterForm);
-            this.editCenterForm.reset();
-            this._router.navigate(['/confirmpage']);
-          },
-          error: () => {
-            alert('Error!');
-          },
-        });
+      this._api.updateCenter(formData).subscribe({
+        next: (res: any) => {
+          this.dataAdded = true;
+          this.image = '';
+          console.log(this.editCenterForm);
+          this.editCenterForm.reset();
+          // this._router.navigate(['/confirmpage']);
+          location.reload();
+        },
+        error: () => {
+          alert('Error!');
+        },
+      });
     }
   }
 
   onFileSelected(event: any, files: any) {
     const file = event.target.files[0];
     const fileSizeKB = Math.round(file.size / 1024);
-    if (fileSizeKB > 500) {
+    if (fileSizeKB > 1000) {
       // alert('too lerge file');
       this.invalidImg = true;
     } else {
       this.invalidImg = false;
+      this.imageSelect = false;
       this.serviceCenterImageUrl?.setValue(file);
       this.imageUrl = event.target.files[0].name;
       var reader = new FileReader();

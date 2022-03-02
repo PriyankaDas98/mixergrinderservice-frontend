@@ -127,7 +127,7 @@ export class AddCenterComponent implements OnInit {
   onFileSelected(event: any, files: any) {
     const file = event.target.files[0];
     const fileSizeKB = Math.round(file.size / 1024);
-    if (fileSizeKB > 800) {
+    if (fileSizeKB > 1000) {
       // alert('too lerge file');
       this.invalidImg = true;
     } else {

@@ -121,7 +121,7 @@
         Close
       </button>
       <button
-        [disabled]="editCenterForm.invalid"
+        [disabled]="(editCenterForm.invalid || invalidImg) && imageSelect"
         mat-raised-button
         color="primary"
         (click)="editCenter()"
